@@ -1,0 +1,112 @@
+*,
+*::before {
+    box-sizing: border-box;
+}
+
+body { 
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    color: #2B283A;
+}
+
+h1,
+h2,
+p,
+section {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 55px;
+    background-color: #F55A5A;
+}
+
+.nav__title {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14.4608px;
+    line-height: 18px;
+    letter-spacing: -0.075em;
+    color: #FFFFFF;
+}
+
+.nav__title::before {
+    display: block;
+    content: '';
+    background-image: url('./img/icon.svg');
+    background-size: 24px 24px;
+    height: 24px;
+    width: 24px;
+    margin-right: 7px;
+}
+
+.cards {
+    padding: 45px 40px;
+}
+
+.card {
+    display: flex;
+    padding: 18px 0;
+    border-bottom: 1px solid #F5F5F5;
+}
+
+.card:last-child {
+    border-bottom: none;
+}
+
+.card__img {
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.card__location {
+    position: relative;
+    text-transform: uppercase;
+    line-height: 12px;
+    margin-bottom: 7px;
+    padding-left: 10px;
+}
+
+.card__location::before {
+    position: absolute;
+    display: block;
+    content: '';
+    background-image: url('./img/mark.svg');
+    background-size: 7px 10px;
+    height: 10px;
+    width: 7px;
+    left: 0px;
+}
+
+.card__location-link {
+    line-height: 12px;
+    text-transform: capitalize;
+    color: #918E9B;
+}
+
+.card__title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 7px;
+}
+
+.card__date {
+    font-weight: 700;
+    line-height: 12px;
+    margin-bottom: 9px;
+}
